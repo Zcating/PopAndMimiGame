@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GYd-L3-pqf"/>
+                        <viewControllerLayoutGuide type="bottom" id="myg-EW-jmF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stay.png" translatesAutoresizingMaskIntoConstraints="NO" id="vls-3j-A7o">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FC-r4-04z">
+                                <rect key="frame" x="182" y="47" width="171" height="367"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="playMimi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4lT-2c-OwT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8M-XO-kz0">
+                                <rect key="frame" x="418" y="217" width="126" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="playPop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0h-c2-SW0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vls-3j-A7o" secondAttribute="trailing" id="6qC-uc-0rN"/>
+                            <constraint firstItem="myg-EW-jmF" firstAttribute="top" secondItem="vls-3j-A7o" secondAttribute="bottom" id="7sZ-Jy-TtB"/>
+                            <constraint firstItem="vls-3j-A7o" firstAttribute="top" secondItem="GYd-L3-pqf" secondAttribute="bottom" id="85A-e7-1ct"/>
+                            <constraint firstItem="vls-3j-A7o" firstAttribute="top" secondItem="GYd-L3-pqf" secondAttribute="bottom" id="P9f-2L-X2K"/>
+                            <constraint firstItem="myg-EW-jmF" firstAttribute="top" secondItem="vls-3j-A7o" secondAttribute="bottom" id="T7V-cO-ODg"/>
+                            <constraint firstItem="vls-3j-A7o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V4s-tY-D8f"/>
+                            <constraint firstItem="vls-3j-A7o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wx8-cK-zUa"/>
+                            <constraint firstAttribute="trailing" secondItem="vls-3j-A7o" secondAttribute="trailing" id="jWY-Ar-7Vx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="vls-3j-A7o" id="ES5-nW-63i"/>
+                        <outlet property="mimiButton" destination="7FC-r4-04z" id="ude-lz-avO"/>
+                        <outlet property="popButton" destination="c8M-XO-kz0" id="gUt-vt-PUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3.1484257871064472" y="45.600000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stay.png" width="1440" height="810"/>
+    </resources>
+</document>
